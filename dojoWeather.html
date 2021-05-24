@@ -12,54 +12,67 @@
         <div class="navBar">
             <h1 class="title">Dojo Weather</h1>
             <div class="cityList">
-                <a href="#" class="city">Burbank</a>
-                <a href="#" class="city">Chicago</a>
-                <a href="#" class="city">Dallas</a>
+                <a href="#" class="city" onclick="alert('Burbank data is loading...')">Burbank</a>
+                <a href="#" class="city" onclick="alert('Chicago data is loading...')">Chicago</a>
+                <a href="#" class="city" onclick="alert('Dallas data is loading...')">Dallas</a>
             </div>
         </div>
         <div class="mainContent">
             <div class="location">
-                <p class="city">San Jose</p>
-                <p class="temperature"></p>
+                <p class="castCity">San Jose</p>
+                <p class="temperature">show temperature in  </p>
+                <select name="unit" id="convert" onchange="convertUnits(this)">
+                    <option>Celcius</option>
+                    <option>Fahrenheit</option>
+                </select>
             </div>
             <div class="forecast">
-                <div class="day">
-                    <p>Today</p>
-                    <img src="some_rain.png" alt="rain">
-                    <p>some rain</p>
-                    <div>
-                        <p class="highs">23.9&#176;</p>
-                        <p class="lows">18.3&#176;</p>
+                <div class="castCard">
+                    <p class="day">Today</p>
+                    <img class="castImg" src="some_rain.png" alt="rain">
+                    <p class="castText">some rain</p>
+                    <div class=temps>
+                        <p class="highs">23.9</p>
+                        <p class="lows">18.3</p>
                     </div>
                 </div>
-                <div class="day">
-                    <p>Tomorrow</p>
-                    <img src="some_sun.png" alt="sun">
-                    <p>some sun</p>
-                    <div>
-                        <p class="highs">26.7&#176;</p>
-                        <p class="lows">18.9&#176;</p>
+                <div class="castCard">
+                    <p class="day">Tomorrow</p>
+                    <img class="castImg" src="some_sun.png" alt="sun">
+                    <p class="castText">some sun</p>
+                    <div class=temps>
+                        <p class="highs">26.7</p>
+                        <p class="lows">18.9</p>
                     </div>
                 </div>
-                <div class="day">
-                    <p>Friday</p>
-                    <img src="some_clouds.png" alt="clouds">
-                    <p>some clouds</p>
-                    <div>
-                        <p class="highs">20.6&#176;</p>
-                        <p class="lows">16.1&#176;</p>
+                <div class="castCard">
+                    <p class="day">Friday</p>
+                    <img class="castImg" src="some_clouds.png" alt="clouds">
+                    <p class="castText">some clouds</p>
+                    <div class=temps>
+                        <p class="highs">20.6</p>
+                        <p class="lows">16.1</p>
                     </div>
                 </div>
-                <div class="day">
-                    <p>Saturday</p>
-                    <img src="some_sun.png" alt="sun">
-                    <p>some sun</p>
-                    <div>
-                        <p class="highs">25.6&#176;</p>
-                        <p class="lows">21.1&#176;</p>
+                <div class="castCard">
+                    <p class="day">Saturday</p>
+                    <img class="castImg" src="some_sun.png" alt="sun">
+                    <p class="castText">some sun</p>
+                    <div class=temps>
+                        <p class="highs">25.6</p>
+                        <p class="lows">21.1</p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="cookies">
+            <img class="cookieImg" src="cookie.png" alt="cookie">
+            <div class="cookieText">
+                <p>Stop! Cookie time</p>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features to analyse our traffic.</p>
+                <a href="#">Read more..</a>
+            </div>
+            <button class=cookieBtn onclick="document.querySelector('.cookies').remove()">I Accept</button>
         </div>
     </div>
     <script src="script.js"></script>

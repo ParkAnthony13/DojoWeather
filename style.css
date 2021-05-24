@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* outline: 2px dotted black; */
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+.navBar {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: skyblue;
+}
+.title {
+    font-size: 300%;
+    flex: 1;
+}
+.cityList {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+}
+.city {
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+.mainContent {
+    width: 90%;
+    margin:auto;
+}
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+}
+.castCity {
+    font-size: 250%;
+    font-weight: bold;
+    flex: 10;
+}
+.temperature {
+    flex: 2;
+}
+#convert {
+    flex: 1;
+}
+.forecast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.castCard {
+    width: 14rem;
+    height: auto;
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+    margin: .7rem;
+    padding: 1rem;
+    flex: 0, 1, auto;
+    flex-wrap: wrap;
+}
+.day {
+    font-size: xx-large;
+    font-weight: 600;
+}
+.castImg {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    margin: 1rem;
+}
+.castText {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.temps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: xx-large;
+}
+.highs {
+    color: red;
+}
+.lows {
+    color: blue;
+}
+.cookies {
+    width: 50%;
+    height: auto;
+    display: none;
+    align-items: center;
+    outline: 2px solid gray;
+    margin: auto;
+    position: fixed;
+    top: 80vh;
+    left: 25%;
+    background-color: lightseagreen;
+}
+.cookieImg {
+    border-radius: 50%;
+    flex: 1;
+}
+.cookieText {
+    flex:6;
+}
+.cookieBtn {
+    height: 2rem;
+    width: 4rem;
+    background-color: skyblue;
+    color: black;
+    flex: 1;
+    margin: 3px;
+}
+.highs::after,.lows::after,.tempOpt::after {
+    content:"\00b0"
+}
